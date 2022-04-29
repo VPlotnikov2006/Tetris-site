@@ -21,6 +21,8 @@ body {
 	text-align: center;
 }
 h1 {
+	margin-bottom: 9%;
+	margin-top: 9%;
 	font-size: 100px;
 	background: linear-gradient(90deg, rgba(131,58,180,1) 25%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 75%);
 	-webkit-background-clip: text;

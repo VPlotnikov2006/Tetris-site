@@ -1,0 +1,82 @@
+@keyframes fall-down {
+	from {
+		margin-bottom: 100%;
+		margin-top: 100%;
+		height: 300%;
+		transform: rotate(180deg);
+	}
+
+	to {
+		transform: rotate(0deg);
+		margin-bottom: 9%;
+		margin-top: 9%;
+		height: 100%;
+	}
+}
+
+body {
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);	
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+h1 {
+	font-size: 100px;
+	background: linear-gradient(90deg, rgba(131,58,180,1) 25%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 75%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+.fall-down-animation {
+	animation-duration: 3s;
+	animation-name: fall-down;
+}
+
+
+/*красивые кнопочки*/ 
+nav {
+	width: 300px;
+	position: relative;
+	left: 28%;
+	background-color: white;
+	font-weight: bold;
+	font-size: 1.2rem;
+	border-radius: 2rem;
+	padding: 0 2rem;
+	margin-top: 0px;
+	
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+	margin: 0 10px;
+	position: relative;
+}
+nav ul li a {
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	color: inherit;
+	text-decoration: none;
+	position: relative;
+}
+nav ul li a:before{
+	content: attr(text);
+	display: block;
+	position: absolute;
+	top 0; left: 0; right: 0; bottom: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #81f1b2;
+	transform: rotateX(-270deg);
+	transform-origin: top;
+	transition: 0.5s;
+	color: white;
+}
+nav ul li a:hover:before {
+	transform: rotateX(0deg);
+}

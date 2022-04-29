@@ -29,11 +29,21 @@ h1 {
 	-webkit-text-fill-color: transparent;
 	
 }
+a {
+	text-decoration: none;
+	color: rgb(0, 100, 0);
+}
+a:hover {
+	color: rgb(100, 0, 0);
+}
+
 .fall-down-animation {
 	animation-duration: 3s;
 	animation-name: fall-down;
 }
-
+.crossed_out {
+	text-decoration: line-through;
+}
 :root {
 	--W: 0;
 }
@@ -84,3 +94,4 @@ nav ul li a:before{
 nav ul li a:hover:before {
 	transform: rotateX(0deg);
 }
+

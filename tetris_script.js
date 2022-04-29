@@ -1,4 +1,3 @@
-alert(document.documentElement.clientWidth);
 let root =  document.documentElement;
 setInterval(update_width, 1);
 

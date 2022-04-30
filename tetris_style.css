@@ -49,7 +49,7 @@ a:hover {
 }
 /*красивые кнопочки*/ 
 nav {
-	width: 300px;
+	width: 350px;
 	position: relative;
 	margin-left:calc(calc(var(--W)) * 1px);
 	background-color: white;
